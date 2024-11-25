@@ -1,0 +1,212 @@
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.1);
+}
+/* ________________________________________________________________________________________ */
+
+        /* DROPDOWN */
+/* estilo do menu do dropdown */
+nav{
+    background-color: #000000;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+position: relative; /* Necessário para o posicionamento do dropdown */
+margin: 0 15px;
+}
+
+nav ul li a{
+    color: #F1C27D;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    /* Torna o link clicável em toda a área */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color:#C0C0C0;
+}
+
+/* estilo do dropdown */
+nav ul li .dropdown-content{
+    display: none; /* Esconde o menu inicialmente */
+    position: absolute; /* Posiciona o submenu em relação ao item pai */
+    background-color: #000000;
+    box-shadow: 0px 8px 16px 0px #F1C27D;
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+    min-height: 160px;
+    padding: 0;
+}
+
+nav ul li .dropdown-content li{
+    margin: 0;
+}
+
+nav ul li .dropdown-content li a{
+    padding: 10px 15px;
+}
+
+nav ul li .dropdown-content li a:hover{
+    background-color: #000000; /* Cor de fundo ao passar o mouse sobre o menu */
+}
+
+/* Exibe o submenu ao passar o mouse sobre o item principal */
+nav ul li:hover .dropdown-content{
+    display: block;
+}
+
+/* Logo */
+.logo img{
+    position: absolute;
+    margin-right: auto;
+    margin-left: 100px; /* Margem para trazer ele para o lado direito */
+    margin-top: 10px 10px 30px 20px;
+    padding: 4px;
+    width: 40px;
+    border-radius: 24px; /* Colocar borda redonda */
+}
+/* _____________________________________________________________________________________________ */
+
+/* Estiliza a tabela do carrinho */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+     padding: 10px;
+     text-align: center;
+    border-bottom: 1px solid #C0C0C0;
+}
+th{
+    background-color: #F1C27D;
+    font-weight: bold;
+}
+
+/* Estiliza o input de quantidade*/
+input.quantidade {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*Estiliza o botão de remover */
+button.remover-produto {
+    background-color: #c74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c0392b;
+}
+/* estiliza o total final */
+.total-final{
+    text-align: right;
+    margin-top: 20px;
+}
+.total-final h3 {
+    color: #c74a3c
+}
+button.remover-produto:hover {
+    background-color: #ef3950;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* _____________________________________________________________________________________________ */
+
+        /* FOOTER */
+        footer{
+            background-color: #000000; /* Cor de fundo da página */
+            color: #C0C0C0; /* Cor da fonte */
+            padding: 40px 0; /* (Sequência: cima, direita, baixo, esquerda) */
+            /* Padding:recuo da borda para dentro - Margin:recuo da borda para fora*/
+            font-family: Georgia, Times, 'Times New Roman', serif; /* Estilo da fonte */
+        }
+        
+        /* O footer a seguir tem um "." e não é igual o de cima, por que ele tem class */
+        .footer-content{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        }
+        
+        .footer-section{
+            flex-basis: 23%; /* Faz com que as seções ocupem 23% da largura, com espaço para margens */
+            margin-bottom: 20px;
+        }
+        
+        .footer-section h4{ /* Estilo dos títulos */
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #F1C27D;
+        }
+        
+        .footer-section p, .footer-section ul{
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .footer-section ul{
+            list-style-type: none;
+        }
+        
+        .footer-section ul li{
+            margin-bottom: 10px;
+        }
+        
+        .footer-section ul li a{
+            color: #F1C27D;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section ul li a:hover{
+            color: #F1C27D;
+        }
+        
+        .social-links a{
+            display: inline-block;
+            margin-right: 10px;
+            color:  #C0C0C0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover{
+            color: #F1C27D;
+        }
+        
+        .footer-bottom{
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            border-top: 1px solid #000000;
+            font-size: 14px;
+        }
+        
+        .footer-bottom p{
+            margin: 0;
+        }
+        
+        /* __________________________________________________________________________________________ */
